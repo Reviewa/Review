@@ -1,5 +1,11 @@
 
 [rewrite_local]
+^http[s]?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/refresh url reject-200
+#重组个人界面
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage url script-response-body https://raw.githubusercontent.com/Reviewa/Review/main/Qidian.js
+#测评去除
+^http[s]?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/getadvlistbatch\?positions url reject-200
+
 var objc = JSON.parse($response.body);
 
     objc = {
