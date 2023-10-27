@@ -1,3 +1,5 @@
+
+[rewrite_local]
 var objc = JSON.parse($response.body);
 
     objc = {
@@ -69,7 +71,7 @@ var objc = JSON.parse($response.body);
       "CardId" : "member",
       "IsMember" : 1,
       "MemberType" : 1,
-      "Title" : "骚逼会员",
+      "Title" : "骚逼大会员",
       "IconUrl" : "https://qidian.qpic.cn/qidian_common/349573/b607187c713dc16bb9b2f09d1119843c/0",
       "IsAuto" : 0,
       "NextFeeTime" : 0
@@ -78,3 +80,8 @@ var objc = JSON.parse($response.body);
 }
 
 $done({body : JSON.stringify(objc)});
+
+
+[mitm]
+
+hostname = magev6.if.qidian.com
