@@ -68,4 +68,4 @@ PageWidgetFactory = {
 }
 
 $done({body : JSON.stringify(PageWidgetFactory)});
- 
+
