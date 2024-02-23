@@ -12,8 +12,8 @@
 
 loon:
 [Script]
-http-request ^https:\/\/kohcamp\.qq\.com\/operation\/action\/signin script-path=wzyd.js, timeout=10, tag=王者营地获取ck
-cron "10 7 * * *" script-path=wzyd.js, timeout=300, tag=王者营地
+http-request ^https:\/\/kohcamp\.qq\.com\/operation\/action\/signin script-response-body=wzyd.js, timeout=10, tag=王者营地获取ck
+cron "10 7 * * *" script-response-body=wzyd.js, timeout=300, tag=王者营地
 [MITM]
 hostname=kohcamp.qq.com
 
