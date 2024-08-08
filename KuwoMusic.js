@@ -20,11 +20,11 @@ APP：酷我音乐
         请勿转载与贩卖！⚠️⚠️⚠️
 
 [Script]
-http-request ^https:\/\/integralapi\.kuwo\.cn\/api\/v1\/online\/sign\/v1\/music\/userBase\? script-path=https://raw.githubusercontent.com/Reviewa/Review/main/Kuwomusic.js, requires-body=true, timeout=10, enabled=true, tag=酷我音乐刷时长获取Cookie,
+http-request ^https:\/\/integralapi\.kuwo\.cn\/api\/v1\/online\/sign\/v1\/music\/userBase\? script-path=https://raw.githubusercontent.com/Reviewa/Review/main/KuwoMusic.js, requires-body=true, timeout=10, enabled=true, tag=酷我音乐刷时长获取Cookie,
 
 
 [Task]
-cron "30 6 * * *" script-path=https://raw.githubusercontent.com/Reviewa/Review/main/Kuwomusic.js, timeout=3600, tag=酷我音乐刷时长,
+cron "30 6 * * *" script-path=https://raw.githubusercontent.com/Reviewa/Review/main/KuwoMusic.js, timeout=3600, tag=酷我音乐刷时长,
 
 
 [MITM]
